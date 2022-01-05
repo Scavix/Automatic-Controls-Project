@@ -166,13 +166,3 @@ ye= pi/3;
 end
 return;
 %%
-%%animation script
-T=t_step;
-Y=y_step;
-fhand=figure(20);
-clf;
-max_T=max(T);
-min_Y=min(Y);
-max_Y=max(Y);
-Y_ss=Y(end);
-axis([-10 10  0 5])
