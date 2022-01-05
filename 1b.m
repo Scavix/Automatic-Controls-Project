@@ -2,9 +2,9 @@
 %%%%%%%%
 %
 %   Project:
-%       Type 1.a
+%       Type 1.b
 %   Team members:
-%       Francesco Ciampana, Alessio Troffei, Vladyslav Tymofieiev,
+%       Alessio Troffei, Vladyslav Tymofieiev,
 %       Francesco Scavello
 %
 %%%%%%%%
