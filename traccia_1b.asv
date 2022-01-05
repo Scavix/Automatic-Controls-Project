@@ -15,7 +15,7 @@
 % - S_%<1%
 % - T_a5< 0,2[s]
 %% 
-clear all, clc
+clear all  clc
 %System parameters definition
 b = 0.3; a = 0.2; F_v = -9; 
 T_a5 = 0.2;
@@ -138,14 +138,14 @@ figure();
 step(L/(1+L), T_simulation, "b"); %F(S)
 
 % add overshoot constraint
-patch([0,T_simulation,T_simulation,0],[W*(1+S_p),W*(1+S_p),W+1,W+1],'r','FaceAlpha',0.3,'EdgeAlpha',0.5);
+patch([0,T_simulation,T_simulation,0],[W*(1+S_p),(1+S_p),1,1],'r','FaceAlpha',0.3,'EdgeAlpha',0.5);
 hold on;
 
 % add Settling time constraint
-patch([T_a5,T_simulation,T_simulation,T_a5],[W*(1-0.01),W*(1-0.01),0,0],'g','FaceAlpha',0.1,'EdgeAlpha',0.5);
-patch([T_a5,T_simulation,T_simulation,T_a5],[W*(1+0.01),W*(1+0.01),W+1,W+1],'g','FaceAlpha',0.1,'EdgeAlpha',0.1);
+patch([T_a5,T_simulation,T_simulation,T_a5],[(1-0.01),(1-0.01),0,0],'g','FaceAlpha',0.1,'EdgeAlpha',0.5);
+patch([T_a5,T_simulation,T_simulation,T_a5],[(1+0.01),(1+0.01),1,1],'g','FaceAlpha',0.1,'EdgeAlpha',0.1);
 
-title("Step response F(s)");
+title("tetep retponse F(s)");
 %%
 if 1
 W=-pi/3;
